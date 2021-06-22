@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+	<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+	<style>
+		#map {position: absolute;top: 0;bottom: 0;left: 0;right: 0;}
+	</style>
+</head>
+<body>
+	<div id = "map"></div>
+	<script>
+		var map = L.map('map').setView([-2,118.14583], 5);
+		L.tileLayer('https://api.maptiler.com/maps/topo/{z}/{x}/{y}.png?key=aXy35nNu5ntqvbt7fLJB', {attribution: '<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>'}).addTo(map);
+
+		var leafletIcon = L.icon ({
+			iconUrl: './images/volcano.png',
+			iconSize: [14,16],
+			popupAnchor: [-1,-8],
+		})
+
+		var marker = 
+		//Gunung Merapi
+		L.marker([-7.540831, 110.444817],{icon:leafletIcon})
+		.addTo(map)
+		.bindPopup(" <hl><b> Gunung Merapi </b></hl> <p> Tipe gunung api: Stratovolcano <br> Elevasi puncak: 2910 m <br> Erupsi terakhir: Berlanjut hingga saat ini <br> <br> Merapi merupakan salah satu gunung berapi teraktif di Indonesia. Ia terletak di wilayah utara Yogyakarta. Erupsi piroklastik serta aliran lahar yang cenderung terjadi pada sisi barat hingga selatan gunung ini ini telah menyebabkan banyak kerusakan baik pada wilayah pertanian maupun pada pemukiman, serta menyebabkan banyak korban jiwa. <br> <br> <b> Referensi: </b> <br> Global Volcanism Program. (2013). Merapi (263250). <i> Volcanoes of the World</i>. Smithsonian Institution. Diakses pada 18 Jun 2021 dari https://doi.org/10.5479/si.GVP.VOTW4-2013 <br> Siebert, L., Simkin, T. & Kimberly, P. (2010). <i>Volcanoes of the world</i>. Washington, D.C.: Smithsonian Institution. </p>");
+
+	</script>
+</body>
+</html>
