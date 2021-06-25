@@ -1,16 +1,12 @@
 @import url(http://fonts.googleapis.com/css?family=PT+Sans+Narrow|Oswald:400,300);
 @import url(https://fonts.googleapis.com/css?family=Kaushan+Script);
 
-<style>
-@font-face {
-  font-family: 'PT Sans Narrow', Arial, sans-serif';
-  src: url(http://fonts.googleapis.com/css?family=PT+Sans+Narrow|Oswald:400,300'); /* IE9 Compat Modes *
-}
-</style>
+
 
 /*------------------------------------------*/
 /*	     01 - General & Basic Styles
 /*------------------------------------------*/
+
 
 
 body {
@@ -149,6 +145,10 @@ h1, h2, h3, h4, h5, h6 {
     color: #fff;
 }
 
+@font-face {
+  font-family: 'PT Sans Narrow', Arial, sans-serif';
+  src: url(http://fonts.googleapis.com/css?family=PT+Sans+Narrow|Oswald:400,300');
+}
 
 
 
